@@ -42,7 +42,7 @@ export function ConnectWallet({ userAddress, setUserAddress, isConnected, setIsC
           // Try to switch to SNFT testnet
           await window.ethereum.request({
             method: "wallet_switchEthereumChain",
-            params: [{ chainId: "0x182a9" }], // 0x182a9 is hex for 98889
+            params: [{ chainId: "0x18249" }], // 0x182a9 is hex for 98889
           })
         } catch (switchError: any) {
           // This error code indicates that the chain has not been added to MetaMask
